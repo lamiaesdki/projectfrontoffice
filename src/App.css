@@ -1,0 +1,241 @@
+/* Additional style to slide the form down */
+.slide-down {
+    margin-top: 50px; /* Adjust this value as needed to slide the form down */
+}
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6f8d74, #8f9d84);
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-hover {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.action-button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+.card-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Sticky navbar styles */
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020; 
+}
+
+/* Center the form on the page */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Wider container specific styles */
+.wider-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Jumbotron styles */
+.jumbotron {
+    background-color: #405D45 !important; 
+    color: white;
+    border-radius: 0.5rem;
+    padding: 2rem 1rem;
+}
+
+/* Card styles */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 1rem 0; /* Add margin to separate cards vertically */
+}
+
+.card .card-body {
+    padding: 2rem;
+}
+
+.card-title {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Form styles specific to FormAjout */
+form {
+    width: 100%;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.form-control {
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    box-shadow: none;
+}
+
+.form-control:read-only {
+    background-color: #e9ecef;
+}
+
+.btn-success {
+    background-color: #405D45;
+    border-color: #405D45;
+}
+
+.btn-success:hover {
+    background-color: #324b38;
+    border-color: #324b38;
+}
+
+/* Button styles */
+.btn {
+    font-weight: 500;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1.25rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #405D45 !important;
+    border-color: #405D45 !important;
+}
+
+.btn-primary:hover {
+    background-color: #324b38 !important;
+    border-color: #324b38 !important;
+}
+
+.btn-secondary {
+    background-color: #6f8d74 !important;
+    border-color: #6f8d74 !important;
+}
+
+.btn-secondary:hover {
+    background-color: #5b735e !important;
+    border-color: #5b735e !important;
+}
+
+/* Table-specific styles */
+.table-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 15px;
+    border: none;
+}
+
+.table thead th {
+    background-color: #405D45;
+    color: white;
+    box-shadow: 0px 2px 2px -1px rgba(0, 0, 0, 0.2);
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #e9ecef;
+}
+
+.table tbody tr:last-child {
+    border-bottom: none;
+}
+
+/* Title styles */
+.table-title {
+    color: #343a40;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 24px;
+}
+.title-background {
+    background-color: #324b38; /* Adjust the shade of green as needed */
+    padding: 10px; /* Optional: add padding for better appearance */
+    color: white; /* Optional: ensure the text color is readable */
+    text-align: center; /* Center align the text */
+}
+
+/* Table headers background color */
+.table-header-background {
+    background-color: #324b38; /* Adjust the shade of green as needed */
+    color: white; /* Ensure the text color is readable */
+    text-align: center; /* Center align the text */
+}
+
+/* Additional margin for the Save and Validate buttons */
+.d-flex.justify-content-between.mt-4 button {
+    margin: 0 5px; /* Adjust the space between buttons */
+}
+
+.d-flex.justify-content-between.mt-4 {
+    justify-content: center;
+}
+.centered-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centers text */
+    justify-content: center; /* Vertically centers text if height is defined */
+    height: 100%; /* Adjust this if needed */
+    text-align: center; /* Centers text horizontally within the container */
+  }
